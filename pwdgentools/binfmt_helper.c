@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     }
 
     // Explicit path validation matrix enforcement matching your structural constraints
-    if (strcmp(parent_exe, "/usr/bin/pwdgen") != 0 && strcmp(parent_exe, "/usr/sbin/python") != 0) {
+    if (strcmp(parent_exe, "/usr/bin/pwdgen") != 0 && strcmp(parent_exe, "/usr/bin/python") != 0) {
         fprintf(stderr, " Execution Refused: .pbin files are strictly restricted to pwdgen execution frameworks.\n");
         return 126;
     }
